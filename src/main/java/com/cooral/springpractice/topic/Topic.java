@@ -1,8 +1,15 @@
 package com.cooral.springpractice.topic;
 
-public class Topic {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-	private String id, name, description;
+@Entity
+public class Topic {
+	
+	@Id
+	private String id;
+	private String name;
+	private String description;
 	
 	public Topic() {
 		// No arg Constructor
